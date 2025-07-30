@@ -1,0 +1,3 @@
+name=Zubair Shaikh
+age=41
+city=Thane

@@ -1,13 +1,6 @@
 package com.zs.bank;
 
-public abstract class Accounts {
-    // Application Constants
-    public static final int INIT_ACNT_NO = 12001;
-    public static final double MIN_SAVINGS_BAL = 1000;
-    public static final double INIT_CURRENT_BAL = 5000;
-    public static final double MIN_CURRENT_BAL = 0;
-    public static final double OVERDRAFT_LIMIT = 10000;
-
+public abstract class Accounts implements Bank {
     private int acntNo;
     private String holder;
     protected double balance;
@@ -35,8 +28,6 @@ public abstract class Accounts {
         txns[idx ++] = new SavingTransaction("Credit", amount, balance);
         return balance;
     }
-
-    public abstract double withdraw(double amount);
 
     public double getBalance() {
         return balance;

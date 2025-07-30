@@ -1,22 +1,20 @@
-import com.zs.bse.Broker;
-import com.zs.bse.Exchange;
-import com.zs.bse.Holder;
-import com.zs.bse.Stock;
+import com.zs.bse.*;
 
 public class TestStock {
     public static void main(String[] args) {
-        Stock tisco = new Stock();
-
-        Holder h = tisco;
+        Holder h = StockSingleton.getStock();
         h.view();
 
-        Broker b = tisco;
+        Broker b = StockSingleton.getStock();
         b.get();
         b.view();
 
-        Exchange x = tisco;
+        Exchange x = StockSingleton.getStock();
         x.set();
         x.get();
         x.view();
+
+        System.out.println(h == b);
+        System.out.println(b == x);
     }
 }

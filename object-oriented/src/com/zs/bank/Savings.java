@@ -10,12 +10,12 @@ public class Savings extends Accounts {
     }
 
     @Override
-    public double withdraw(double amount) {
+    public double withdraw(double amount) throws BalanceException {
         if(amount <= (balance - MIN_SAVINGS_BAL)) {
             balance -= amount;
             txns[idx ++] = new SavingTransaction("Debit", amount, balance);
         } else
-            System.out.println("Insufficient funds.");
+            throw new BalanceException("Insufficient funds.");
         return balance;
     }
 }

@@ -1,3 +1,7 @@
+package com.zs;
+
+import java.security.BasicPermission;
+
 public class Person {
     private String name;
     private int age;
@@ -12,7 +16,8 @@ public class Person {
         this("anonymous", -1);
     }
 
-    public void print() {
+    private void print() {
+        BasicPermission pm = new BasicPermission("Private method") {};
         System.out.println(this.name + " " + this.age);
     }
 
@@ -29,22 +34,5 @@ public class Person {
                 return true;
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        Person p1 = new Person("Polo", 21);
-        p1.print();
-
-        Person p2 = new Person("Polo", 21);
-        p2.print();
-
-        System.out.println(p1.hashCode());
-        System.out.println(p1); // implicitly calling toString()
-        System.out.println(p1.equals(p2));
-
-        String s1 = "Hello";
-        String s2 = new String("Hello");
-        System.out.println(s1 == s2);
-        System.out.println(s1.equals(s2));
     }
 }
