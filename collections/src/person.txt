@@ -1,0 +1,3 @@
+name=Zubair
+age=44
+city=Mumbai
