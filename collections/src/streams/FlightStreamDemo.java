@@ -33,5 +33,7 @@ public class FlightStreamDemo {
 		
 		// Remove a flight no 920
 		flights.removeIf(f -> f.getCode()==920);
+
+		
 	}
 }
