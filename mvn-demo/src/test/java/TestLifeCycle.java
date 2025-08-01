@@ -21,7 +21,7 @@ public class TestLifeCycle {
 	@BeforeEach
 	public void setupEach() {
 		cart = new ArrayList<String>();
-		cart.add("Kiwi");
+//		cart.add("Kiwi");
 		System.out.println("Setup before each test case");
 	}
 	

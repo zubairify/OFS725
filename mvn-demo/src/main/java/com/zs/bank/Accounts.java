@@ -9,7 +9,7 @@ public class Accounts {
 	
 	public double deposit(double amount) {
 		if(amount < 0)
-			throw new NumberFormatException("Negative amount");
+			throw new NumberFormatException("Nagative amount");
 		
 		balance += amount;
 		return balance;
@@ -17,7 +17,7 @@ public class Accounts {
 	
 	public double withdraw(double amount) throws BalanceException {
 		if(amount < 0)
-			throw new NumberFormatException("Negative amount");
+			throw new NumberFormatException("Nagative amount");
 		if(amount > balance)
 			throw new BalanceException("Insufficient funds!");
 		

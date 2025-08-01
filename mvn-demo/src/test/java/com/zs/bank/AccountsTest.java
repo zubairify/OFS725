@@ -5,34 +5,39 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AccountsTest {
+public class AccountsTest {
     private Accounts accounts;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         accounts = new Accounts(1000);
     }
 
     @Test
-    void testNegativeDeposit() {
+    public void testNegativeDeposit() {
         assertThrows(NumberFormatException.class,
                 () -> accounts.deposit(-1));
     }
 
     @Test
-    void testValidDeposit() {
+    public void testValidDeposit() {
         assertEquals(1500, accounts.deposit(500));
     }
 
     @Test
-    void testNegativeWithdraw() {
+    public void testNegativeWithdraw() {
+        assertThrows(NumberFormatException.class,
+                () -> accounts.withdraw(-1));
     }
 
     @Test
-    void testInvalidWithdraw() {
+    public void testInvalidWithdraw() {
+        assertThrows(BalanceException.class,
+                () -> accounts.withdraw(1500));
     }
 
     @Test
-    void testValidWithdraw() {
+    public void testValidWithdraw() throws BalanceException {
+        assertEquals(900, accounts.withdraw(100));
     }
 }

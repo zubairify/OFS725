@@ -1,0 +1,5 @@
+101,Alto,Suzuki,White,Petrol,275000
+102,WagonR,Suzuki,Blue,CNG,350000
+103,Indica,TATA,White,Diesel,475000
+104,Punch,TATA,Blue,Petrol,625000
+105,Tiago,TATA,White,Bettery,750000

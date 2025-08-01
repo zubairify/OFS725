@@ -7,7 +7,7 @@ public class TestExceptions {
 	@Test
 	public void testDivision() {
 		assertThrows(ArithmeticException.class,
-				() -> { int x = 10 / 2; });
+				() -> { int x = 10 / 0; });
 	}
 	
 	@Test
