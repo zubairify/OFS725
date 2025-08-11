@@ -11,7 +11,15 @@
         <option value="$PROJECT_DIR$/match-service/pom.xml" />
         <option value="$PROJECT_DIR$/ipl-registry-service/pom.xml" />
         <option value="$PROJECT_DIR$/ipl-api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-producer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-producer-service/kafka-consumer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-consumer-service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/kafka-producer-service/kafka-consumer-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">

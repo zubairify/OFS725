@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ipl-api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ipl-registry-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-consumer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-producer-service/kafka-consumer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-producer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/team-service/src/main/java" charset="UTF-8" />
   </component>

@@ -15,9 +15,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ipl-api-gateway" />
+        <module name="kafka-producer-service" />
+        <module name="kafka-consumer-service" />
         <module name="ipl-registry-service" />
       </profile>
-      <profile name="Annotation profile for match-service" enabled="true">
+      <profile name="Annotation profile for team-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -33,6 +35,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ipl-api-gateway" options="-parameters" />
       <module name="ipl-registry-service" options="-parameters" />
+      <module name="kafka-consumer-service" options="-parameters" />
+      <module name="kafka-producer-service" options="-parameters" />
       <module name="match-service" options="-parameters" />
       <module name="match-service.main" options="-parameters" />
       <module name="match-service.test" options="-parameters" />
