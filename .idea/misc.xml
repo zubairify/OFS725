@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/kafka-producer-service/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-producer-service/kafka-consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-consumer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-json-producer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
