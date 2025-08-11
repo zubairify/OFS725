@@ -10,11 +10,13 @@ public class FallbackController {
 
     @GetMapping("/teamFallback")
     public ResponseEntity<String> teamServiceFallback() {
-    	return new ResponseEntity<String>("Team service is taking longer than expected\nPlease try after sometime", HttpStatus.GATEWAY_TIMEOUT);
+    	return new ResponseEntity<String>("Team service is taking longer than expected\nPlease try after sometime",
+                HttpStatus.GATEWAY_TIMEOUT);
     }
 
     @GetMapping("/matchFallback")
     public ResponseEntity<String> matchServiceFallback() {
-    	return new ResponseEntity<String>("Match service is taking longer than expected\nPlease try after sometime", HttpStatus.GATEWAY_TIMEOUT);
+    	return new ResponseEntity<String>("Match service is taking longer than expected\nPlease try after sometime",
+                HttpStatus.GATEWAY_TIMEOUT);
     }
 }
