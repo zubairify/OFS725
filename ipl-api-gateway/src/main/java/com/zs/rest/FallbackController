@@ -1,0 +1,20 @@
+package com.zs.rest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FallbackController {
+
+    @GetMapping("/teamFallback")
+    public ResponseEntity<String> teamServiceFallback() {
+    	return new ResponseEntity<String>("Team service is taking longer than expected\nPlease try after sometime", HttpStatus.GATEWAY_TIMEOUT);
+    }
+
+    @GetMapping("/matchFallback")
+    public ResponseEntity<String> matchServiceFallback() {
+    	return new ResponseEntity<String>("Match service is taking longer than expected\nPlease try after sometime", HttpStatus.GATEWAY_TIMEOUT);
+    }
+}
